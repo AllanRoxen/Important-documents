@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: insurance
-          image: allanroxen/insurance-project:1
+          image: allanroxen/insureme-project:latest
           ports:
             - containerPort: 8081
           env:
