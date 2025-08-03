@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: insureme
+  name: financeme
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: insureme
+      app: financeme
   template:
     metadata:
       labels:
-        app: insureme
+        app: financeme
     spec:
       containers:
-        - name: insurance
-          image: allanroxen/insureme-project:latest
+        - name: financeme
+          image: allanroxen/financeme-project:latest
           ports:
             - containerPort: 8081
           env:
